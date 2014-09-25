@@ -1,0 +1,16 @@
+{
+	"name": "WebFramework",
+	"title": "Sass, Grunt, Susy, all the good stuff",
+	"url": "http://google.com",
+	"author": "Razvan Stavila",
+	"copyright": "2014",
+	"version": "1.0.0",
+	"license": "MIT",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-sass": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-open": "latest",
+		"matchdep": "latest"
+	}
+}

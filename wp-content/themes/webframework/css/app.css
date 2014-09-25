@@ -1,0 +1,79 @@
+/* glue: 0.9.4 hash: bf74272b2d */
+.ic {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ic:before {
+  content: '';
+  display: inline-block;
+  background-image: url("../img/_sprites.png");
+  background-repeat: no-repeat;
+}
+
+.ic-link {
+  display: inline-block;
+}
+
+.ic-link:hover .ic-rabbit:before,
+.ic-rabbit:hover:before {
+  background-position: 0 0;
+}
+
+.ic-rabbit:before {
+  background-position: -64px 0;
+  width: 64px;
+  height: 64px;
+}
+
+.ic-link:hover .ic-snail:before,
+.ic-snail:hover:before {
+  background-position: 0 -64px;
+}
+
+.ic-snail:before {
+  background-position: -54px -64px;
+  width: 54px;
+  height: 54px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1), screen and (min--moz-device-pixel-ratio: 1), screen and (-o-min-device-piratio: 100 / 100), screen and (min-device-pixel-ratio: 1) {
+  .ic-rabbit:hover:before,
+  .ic-rabbit:before,
+  .ic-snail:hover:before,
+  .ic-snail:before {
+    background-image: url("../img/_sprites.png");
+    -webkit-background-size: 128px 118px;
+    -moz-background-size: 128px 118px;
+    background-size: 128px 118px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-o-min-device-piratio: 200 / 100), screen and (min-device-pixel-ratio: 2) {
+  .ic-rabbit:hover:before,
+  .ic-rabbit:before,
+  .ic-snail:hover:before,
+  .ic-snail:before {
+    background-image: url("../img/_sprites@2x.png");
+    -webkit-background-size: 128px 118px;
+    -moz-background-size: 128px 118px;
+    background-size: 128px 118px;
+  }
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centered in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+/*# sourceMappingURL=app.css.map */

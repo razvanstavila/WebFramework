@@ -1,0 +1,91 @@
+﻿/* glue: 0.9.4 hash: bf74272b2d */
+
+.ic {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	&:before {
+		content: '';
+		display: inline-block;
+    	background-image:url('../img/_sprites.png');
+    	background-repeat:no-repeat;
+    }
+}
+.ic-link {
+	display: inline-block;
+}
+
+
+	
+	.ic-link:hover .ic-rabbit,
+	
+	.ic-rabbit:hover {
+		&:before {
+	    	background-position:0 0;
+	    	
+	    }
+	}
+
+	
+	.ic-rabbit {
+		&:before {
+	    	background-position:-64px 0;
+	    	
+	    	width:64px;
+	    	height:64px;
+	    	
+	    }
+	}
+
+	
+	.ic-link:hover .ic-snail,
+	
+	.ic-snail:hover {
+		&:before {
+	    	background-position:0 -64px;
+	    	
+	    }
+	}
+
+	
+	.ic-snail {
+		&:before {
+	    	background-position:-54px -64px;
+	    	
+	    	width:54px;
+	    	height:54px;
+	    	
+	    }
+	}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0),screen and (-o-min-device-piratio: 100/100),screen and (min-device-pixel-ratio: 1.0){
+    .ic-rabbit:hover, 
+    .ic-rabbit, 
+    .ic-snail:hover, 
+    .ic-snail
+    {
+	    &:before {
+	        background-image:url('../img/_sprites.png');
+	        -webkit-background-size: 128px 118px;
+	        -moz-background-size: 128px 118px;
+	        background-size: 128px 118px;
+	    }
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0),screen and (-o-min-device-piratio: 200/100),screen and (min-device-pixel-ratio: 2.0){
+    .ic-rabbit:hover, 
+    .ic-rabbit, 
+    .ic-snail:hover, 
+    .ic-snail
+    {
+	    &:before {
+	        background-image:url('../img/_sprites@2x.png');
+	        -webkit-background-size: 128px 118px;
+	        -moz-background-size: 128px 118px;
+	        background-size: 128px 118px;
+	    }
+    }
+}
