@@ -72,6 +72,6 @@ The project is using the __Grunt__ task manager to manage all the aspects of the
 
 http://glue.readthedocs.org/en/latest/installation.html
 
-For HearPlay Project the task is:
+For your Web Project the task is:
 
 	glue --source=wp-content/themes/webframework/src/img/_sprites --img=wp-content/themes/webframework/img --scss=wp-content/themes/webframework/src/scss/modules --url=../img/ --namespace=ic --sprite-namespace= --sprite-separator=_ --scss-template=template.jinja --ratios=2,1 --padding=2 --watch
